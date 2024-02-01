@@ -1,5 +1,10 @@
 @import url("node_modules/modern-normalize/modern-normalize.css");
 
+html {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 h1 {
   color: black;
 }
@@ -55,9 +60,4 @@ img {
   border-radius: 8px;
   max-width: 30%;
   height: auto;
-}
-
-header,
-main {
-  border-bottom: black;
 }
