@@ -5,6 +5,12 @@ html {
   margin: 0 auto;
 }
 
+img {
+  border-radius: 8px;
+  max-width: 48%;
+  height: auto;
+}
+
 h1 {
   color: black;
 }
@@ -42,15 +48,56 @@ a {
 
 ul {
   margin: 0;
-  background: rgba(182, 194, 206, 0.696);
+  background: rgba("182, 194, 206, 0.696");
   padding: 10px;
   color: black;
 }
 
 ul li {
-  background: rgba(255, 255, 255, 0.164);
+  background: rgba("255, 255, 255, 0.164");
   padding: 5px;
   margin-left: 35px;
+}
+
+input {
+  padding: 10px;
+  box-shadow: 0 0 0 0.25px;
+  border-radius: 24px;
+  color: rgba("0, 0, 0, 0.521");
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+textarea {
+  min-height: 160px;
+  padding: 10px;
+  box-shadow: 0 0 0 1px;
+  border-radius: 24px;
+  color: rgba("0, 0, 0, 0.521");
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+form {
+  width: 180px;
+  margin: auto;
+}
+
+button {
+  height: 36px;
+  width: 172px;
+  padding: 10px;
+  box-shadow: 0 0 0 1px;
+  border-radius: 6px;
+  text-align: center;
+  color: rgba("0, 0, 0, 0.521");
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+button:hover {
+  border-radius: 32px;
+  background-color: rgba("128, 128, 128, 0.436");
+  color: white;
+  transition: all 0.4s ease-in-out;
 }
 
 .justify-center {
@@ -68,10 +115,4 @@ ul li {
 
 .items-center {
   align-items: center;
-}
-
-img {
-  border-radius: 8px;
-  max-width: 30%;
-  height: auto;
 }
