@@ -76,15 +76,10 @@ textarea {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-form {
-  width: 180px;
-  margin: auto;
-}
-
 button {
   height: 36px;
-  width: 172px;
-  padding: 10px;
+  width: 124px;
+  padding: 0px;
   box-shadow: 0 0 0 1px;
   border-radius: 6px;
   text-align: center;
