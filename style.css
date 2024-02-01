@@ -1,1 +1,15 @@
 @import url("node_modules/modern-normalize/modern-normalize.css");
+
+h1 {
+  color: teal;
+}
+
+img {
+  max-width: 25%;
+  height: auto;
+}
+
+header,
+main {
+  border-bottom: black;
+}

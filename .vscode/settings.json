@@ -8,5 +8,6 @@
   "editor.formatOnSave": true,
   "editor.wordWrap": "wordWrapColumn",
   "files.autoSave": "onFocusChange",
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "cSpell.words": ["Audre", "Erina", "Lorde"]
 }
