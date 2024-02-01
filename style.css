@@ -1,11 +1,40 @@
 @import url("node_modules/modern-normalize/modern-normalize.css");
 
 h1 {
-  color: teal;
+  color: black;
+}
+
+body {
+  padding: 18px;
+  background-color: cadetblue;
+  color: #fff;
+}
+
+h1,
+h2 {
+  margin: ;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  gap: 8px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 img {
-  max-width: 25%;
+  border-radius: 8px;
+  max-width: 30%;
   height: auto;
 }
 

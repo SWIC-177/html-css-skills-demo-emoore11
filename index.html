@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="flex items - center justify center">
+    <header class="flex items-center justify center">
+    
       <h1>Erina Moore</h1>
-      <h2>Dog Lover and Nap Enthusiast</h2>
-
-      <img src="./images/xmasPic.jpg" alt="Couple taking goofy photo" />
+  
+    
     </header>
+    <img src="./images/xmasPic.jpg" alt="Couple taking goofy photo" />
 
     <main>
-      <h2>A little About Me</h2>
+      <h2>Dog Lover and Nap Enthusiast</h2>
+      
+      <h3>A little About Me</h3>
 
       <p>
         I was born and raised in the Midwest, but I do dream of having a
@@ -39,9 +42,9 @@
         When I'm not spiraling from existential dread, I really enjoy hanging out with my pets, and my family. I love to be outside, reading, laying in my hammock. I've recently gotten into meditation, and that is something that I'm really beginning to enjoy - <em>when I can keep my thoughts straight</em>.
       </p>
 
-      <h3> Other Things that Keep me Going Include:</h3>
+      <ul><em>Other Things that Keep me Going Include:</em></ul>
 
-      <ul>
+      <ul class="flex flex-col">
         <li> Music </li>
         <li> My Nespresso machine </li>
         <li> Sarcastic jokes and witty banter </li>
@@ -50,6 +53,24 @@
       <h3>So.. Why Software Development?</h3>
 
       <p> I've been interested in Software Development for quite a while now. It was something that my grandfather did for work, and I have little memories of him doing some really cool stuff even on the older systems. So I'm excited to see how everything works for myself.</p>
+
+      <form class="flex-col">
+        <label for="name">Name</label>
+        <input type ="text" id="name" />
+
+        <label for="email">Email</label>
+        <input type ="text" id="email" />
+
+        <label for="phone">Phone</label>
+        <input type ="text" id="phone" />
+
+        <label for="message">Message</label>
+        <textarea id ="message" name="message"></textarea>
+
+        <button type="submit">Submit</button>
+
+        
+      </form>
 
 
     </main>
