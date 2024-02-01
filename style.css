@@ -4,12 +4,8 @@ h1 {
   color: black;
 }
 
-form {
-  align-items: center;
-}
-
 body {
-  max-width: 1080px;
+  max-width: 1080=px;
   margin: 0 auto;
   float: none;
   padding: 18px;
@@ -23,16 +19,9 @@ div {
   max-width: 75%;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 8em;
-}
-
 h1,
 h2 {
-  margin: ;
+  margin: 0;
 }
 
 .justify-center {
@@ -41,7 +30,7 @@ h2 {
 
 .flex {
   display: flex;
-  gap: 8px;
+  gap: 16px;
 }
 
 .flex-col {
