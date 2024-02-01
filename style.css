@@ -33,10 +33,24 @@ footer {
 h1,
 h2 {
   margin: 0;
+  padding: 0;
 }
 
 a {
   font-weight: bold;
+}
+
+ul {
+  margin: 0;
+  background: rgba(182, 194, 206, 0.696);
+  padding: 10px;
+  color: black;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.164);
+  padding: 5px;
+  margin-left: 35px;
 }
 
 .justify-center {
