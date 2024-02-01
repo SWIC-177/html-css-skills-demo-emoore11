@@ -4,10 +4,30 @@ h1 {
   color: black;
 }
 
+form {
+  align-items: center;
+}
+
 body {
+  max-width: 1080px;
+  margin: 0 auto;
+  float: none;
   padding: 18px;
   background-color: cadetblue;
   color: #fff;
+}
+
+div {
+  border: solid 3px;
+  padding: 1em;
+  max-width: 75%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8em;
 }
 
 h1,
