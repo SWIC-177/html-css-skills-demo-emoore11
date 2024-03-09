@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,76 +8,77 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <div class="flex-auto">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
 
-      <img src="./images/xmasPic.jpg" alt="Couple taking goofy photo" />
+          <img src="./images/xmasPic.jpg" alt="Couple taking goofy photo" />
+        </nav>
+      </header>
 
-      
-      <h1>Erina Moore</h1>
-      <h2>Dog Lover and Nap Enthusiast</h2>
-    
+      <main>
+        <h3 class="text-wrap font-bold mb-2">A little About Me</h3>
 
-    </header>
+        <p class="text-wrap mb-4">
+          My name is Erina Moore. I'm a 27 year old from the United States. I'm
+          a huge fan of music, coffee, and books. I'm also a Web Development
+          student here at SWIC. I'm excited to see where this journey takes me.
+        </p>
 
-    
+        <section class="bg-green-100 py-10">
+          <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-4">
+              Other things I enjoy include:
+            </h3>
+            <p></p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="bg-white p-4 shadow-md">
+                <h4 class="text-lg font-semibold mb-2 animate-pulse">Music</h4>
+                <p class="text-gray-600">
+                  I love listening to music. It helps me relax and unwind.
+                </p>
+              </div>
+              <div class="bg-white p-4 shadow-md">
+                <h4 class="text-lg font-semibold mb-2 animate-pulse">Coffee</h4>
+                <p class="text-gray-600">
+                  I'm a coffee enthusiast. I can't start my day without a good
+                  cup of coffee.
+                </p>
+              </div>
+              <div class="bg-white p-4 shadow-md">
+                <h4 class="text-lg font-semibold mb-2 animate-pulse">Books</h4>
+                <p class="text-gray-600">
+                  I enjoy reading books in my free time. It's a great way to
+                  expand my knowledge.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <form>
+          <label for="name"></label><br />
+          <input type="text" id="name" name="name" value="Name" /><br />
+          <label for="email"></label><br />
+          <input type="text" id="email" name="email" value="Email" /><br />
+          <label for="phone"></label><br />
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            value="Call Me"
+          /><br /><br />
+          <label for="message"></label>
+          <textarea id="message" name="message">Message Me</textarea
+          ><br /><br />
 
-    <main>
-      
-      
-      <h3>A little About Me</h3>
-
-      <p>
-        I was born and raised in the Midwest, but I do dream of having a
-        disposable income that I can use to travel. That is, before climate
-        change <em>really</em> decides to make us
-        <a
-          href="https://www.weforum.org/agenda/2023/10/climate-loss-and-damage-cost-16-million-per-hour/#:~:text=Follow-,The%20global%20cost%20of%20climate%20change%20damage%20is%20estimated%20to,%2C%20agriculture%2C%20and%20human%20health." target="_blank">pay.</a>
-    
-        
-      </p>
-
-      <p>
-        I care a lot about social issues, some would say <em>too much</em>.
-        However, the topic of Human Rights is something I feel very strongly
-        about.
-
-      <blockquote><em>“My silence has not protected me. Your silence will not protect you.”
-        - Audre Lorde</em></blockquote>
-
-        When I'm not spiraling from existential dread, I really enjoy hanging out with my pets, and my family. I love to be outside, reading, laying in my hammock. I've recently gotten into meditation, and that is something that I'm really beginning to enjoy. I have this delusion of picking up tennis as a hobby, but I've had an unused tennis racket and Wilson Sweatband for 3 years now.
-      </p>
-
-      <ul><em>Other Things that Keep me Going Include:</em></ul>
-
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=4xDzrJKXOOY" target="_blank">Music</a>
-        </li>
-        <li> My Nespresso machine </li>
-        <li> Sarcastic jokes and witty banter </li>
-      </ul>
-
-      <h3>So.. Why Software Development?</h3>
-
-      <p> I've been interested in Software Development for quite a while now. It was something that my grandfather did for work, and I have little memories of him doing some really cool stuff even on the older systems. So I'm excited to see how everything works for myself.</p>
-
-
-      <form>
-        <label for="name"></label><br>
-        <input type="text" id="name" name="name" value="Name"><br>
-        <label for="email"></label><br>
-        <input type="text" id="email" name="email" value="Email"><br>
-        <label for="phone"></label><br>
-        <input type="text" id="phone" name="phone" value="Call Me"><br><br>
-        <label for="message"></label>
-        <textarea id ="message" name="message">Message Me</textarea><br><br>
-        
-<button type="submit">Submit</button>    
-
-</form>
-
-  
-
-
-    </main>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+    </div>
   </body>
 </html>
