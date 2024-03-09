@@ -111,3 +111,9 @@ button:hover {
 .items-center {
   align-items: center;
 }
+
+@media screen and (width >= 1080px) {
+  .grid-lg {
+    display: flex;
+  }
+}
