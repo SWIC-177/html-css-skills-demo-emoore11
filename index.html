@@ -8,76 +8,116 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="flex flex-col justify-center items-center min-h-screen">
-      <header>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-          <img src="./images/xmasPic.jpg" alt="Couple taking goofy photo" />
-        </nav>
-      </header>
+        <img src="./images/xmasPic.jpg" alt="Couple taking goofy photo" />
+      </nav>
+    </header>
 
-      <main>
-        <h3 class="text-wrap font-bold mb-2">A little About Me</h3>
+    <main>
+      <h3 class="text-wrap font-bold mb-2">A little About Me</h3>
 
-        <p class="text-wrap mb-4">
-          My name is Erina Moore. I'm a 27 year old from the United States. I'm
-          a huge fan of music, coffee, and books. I'm also a Web Development
-          student here at SWIC. I'm excited to see where this journey takes me.
-        </p>
+      <p class="text-wrap mb-4">
+        My name is Erina Moore. I'm a 27 year old from the United States. I'm a
+        huge fan of music, coffee, and books. I'm also a Web Development student
+        here at SWIC. I'm excited to see where this journey takes me.
+      </p>
 
-        <section class="bg-green-100 py-10">
-          <div class="container mx-auto px-4">
-            <h3 class="text-2xl font-bold mb-4">
-              Other things I enjoy include:
-            </h3>
-            <p></p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div class="bg-white p-4 shadow-md">
-                <h4 class="text-lg font-semibold mb-2 animate-pulse">Music</h4>
-                <p class="text-gray-600">
-                  I love listening to music. It helps me relax and unwind.
-                </p>
-              </div>
-              <div class="bg-white p-4 shadow-md">
-                <h4 class="text-lg font-semibold mb-2 animate-pulse">Coffee</h4>
-                <p class="text-gray-600">
-                  I'm a coffee enthusiast. I can't start my day without a good
-                  cup of coffee.
-                </p>
-              </div>
-              <div class="bg-white p-4 shadow-md">
-                <h4 class="text-lg font-semibold mb-2 animate-pulse">Books</h4>
-                <p class="text-gray-600">
-                  I enjoy reading books in my free time. It's a great way to
-                  expand my knowledge.
-                </p>
-              </div>
+      <section class="bg-green-100 py-10">
+        <div class="container mx-auto px-4">
+          <h3 class="text-2xl font-bold mb-4">Other things I enjoy include:</h3>
+          <p></p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-4 shadow-md">
+              <h4 class="text-lg font-semibold mb-2 animate-pulse">Music</h4>
+              <p class="text-gray-600">
+                I love listening to music. It helps me relax and unwind.
+              </p>
+            </div>
+            <div class="bg-white p-4 shadow-md">
+              <h4 class="text-lg font-semibold mb-2 animate-pulse">Coffee</h4>
+              <p class="text-gray-600">
+                I'm a coffee enthusiast. I can't start my day without a good cup
+                of coffee.
+              </p>
+            </div>
+            <div class="bg-white p-4 shadow-md">
+              <h4 class="text-lg font-semibold mb-2 animate-pulse">Books</h4>
+              <p class="text-gray-600">
+                I enjoy reading books in my free time. It's a great way to
+                expand my knowledge.
+              </p>
             </div>
           </div>
-        </section>
-        <form>
-          <label for="name"></label><br />
-          <input type="text" id="name" name="name" value="Name" /><br />
-          <label for="email"></label><br />
-          <input type="text" id="email" name="email" value="Email" /><br />
-          <label for="phone"></label><br />
+        </div>
+      </section>
+
+      <form
+        class="max-w-md mx-auto p-6 bg-yellow-100 shadow-md rounded-md mt-4"
+      >
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold mb-2"
+            >Name</label
+          >
           <input
             type="text"
-            id="phone"
-            name="phone"
-            value="Call Me"
-          /><br /><br />
-          <label for="message"></label>
-          <textarea id="message" name="message">Message Me</textarea
-          ><br /><br />
-
-          <button type="submit">Submit</button>
-        </form>
-      </main>
-    </div>
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="Call Me" class="block text-gray-700 font-semibold mb-2"
+            >Call Me</label
+          >
+          <input
+            type="text"
+            id="call"
+            name="call"
+            placeholder="Enter your phone number"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block text-gray-700 font-semibold mb-2"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Enter your message"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+          ></textarea>
+        </div>
+        <div class="flex justify-end">
+          <button
+            type="submit"
+            class="bg-green-500 hover:bg-green-600 hover: text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
