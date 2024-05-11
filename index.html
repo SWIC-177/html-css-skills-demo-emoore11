@@ -4,26 +4,141 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erina Moore</title>
+    <title>How To Take The Best Nap</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Custom styles */
+      .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .marquee-item {
+        display: inline-block;
+        margin-right: 20px; /* Adjust spacing between images */
+        transition: transform 0.3s ease;
+      }
+
+      .marquee-item:hover {
+        cursor: pointer; /* Change cursor to pointer when hovering over images */
+      }
+    </style>
   </head>
-  <body
-    class="flex flex-col justify-center items-center min-h-screen max-w-900"
-  >
+  <body class="bg-gray-200 p-8">
     <header>
-      <img
-        src="./images/xmasPic.jpg"
-        alt="Couple taking goofy photo"
-        class="border-2 border-green-200 rounded-lg shadow-lg"
-      />
+      <div class="marquee-container">
+        <!-- Add your images here -->
+        <div class="marquee-item">
+          <img src="images/moosenap.jpg" alt="dog napping" class="h-48 w-48" />
+        </div>
+        <div class="marquee-item">
+          <img src="images/tippynap.jpg" alt="cat napping " class="h-48 w-48" />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="images/finnapping.jpg"
+            alt="dog covered up napping "
+            class="h-48 w-48"
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="images/moosetippynap.jpg"
+            alt="cat napping with dog "
+            class="h-48 w-48"
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="images/mooseandtippy2.jpg"
+            alt="dog napping"
+            class="h-48 w-48"
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="images/mooseonbed.jpg"
+            alt="dog napping"
+            class="h-48 w-48"
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="images/puppysleeping.jpg"
+            alt="dog napping"
+            class="h-48 w-48"
+          />
+        </div>
+        <div class="marquee-item">
+          <img src="images/mtnapping.jpg" alt="dog napping" class="h-48 w-48" />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="images/mtnapping2.jpg"
+            alt="dog napping"
+            class="h-48 w-48"
+          />
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+      <script>
+        // JavaScript to implement the marquee effect
+        const container = document.querySelector(".marquee-container");
+        let isHovering = false;
+
+        // Function to toggle hovering state
+        function toggleHover() {
+          isHovering = !isHovering;
+        }
+
+        // Function to handle mouse enter event
+        function handleMouseEnter() {
+          toggleHover();
+        }
+
+        // Function to handle mouse leave event
+        function handleMouseLeave() {
+          toggleHover();
+        }
+
+        // Event listeners for mouse enter and leave events
+        container.addEventListener("mouseenter", handleMouseEnter);
+        container.addEventListener("mouseleave", handleMouseLeave);
+
+        // Function to move the marquee
+        function moveMarquee() {
+          const items = document.querySelectorAll(".marquee-item");
+          const containerWidth = container.offsetWidth;
+          let distance = 0;
+
+          setInterval(() => {
+            if (!isHovering) {
+              distance -= 1;
+              items.forEach((item) => {
+                item.style.transform = `translateX(${distance}px)`;
+              });
+
+              if (Math.abs(distance) >= containerWidth) {
+                distance = 0;
+                items.forEach((item) => {
+                  item.style.transform = `translateX(${distance}px)`;
+                });
+              }
+            }
+          }, 10); // Adjust the interval for smoother or faster movement
+        }
+
+        // Call moveMarquee function when the DOM is loaded
+        document.addEventListener("DOMContentLoaded", moveMarquee);
+      </script>
     </header>
 
     <main>
-      <h3 class="text-wrap font-bold mx-10 mt-10 text-center text-2xl">
-        A little About Me
+      <h3 class="mx-10 mt-10 text-wrap text-center text-2xl font-bold">
+        A Little About Me
       </h3>
 
-      <p class="text-wrap mb-4 max-w-900 text-center">
+      <p class="max-w-900 mb-4 text-wrap text-center">
         My name is Erina Moore. I'm a 27 year old born and raised in the
         Midwest. I'm a huge fan of naps, laying in my hammock, and watching
         reality tv shows. I'm also a Web Development student here at SWIC. I'm
@@ -31,19 +146,19 @@
       </p>
 
       <section class="bg-green-100 py-10">
-        <div class="container max-w-900 px-20">
-          <h3 class="text-2xl font-bold mb-4 text-center">
+        <div class="max-w-900 container px-20">
+          <h3 class="mb-4 text-center text-2xl font-bold">
             Other things I enjoy include:
           </h3>
           <p></p>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             <div class="bg-white p-4 shadow-md">
               <h4
-                class="text-lg font-semibold mb-2 animate-pulse text-center text-green-700"
+                class="mb-2 animate-pulse text-center text-lg font-semibold text-green-700"
               >
                 Music
               </h4>
-              <p class="text-gray-600 text-center">
+              <p class="text-center text-gray-600">
                 I love listening to music. Really any kind of music honestly, it
                 just depends on the mood I'm in. I love Mac Miller, Frank Ocean
                 and Kid Cudi to name a few!
@@ -51,11 +166,11 @@
             </div>
             <div class="bg-white p-4 shadow-md">
               <h4
-                class="text-lg font-semibold mb-2 animate-pulse text-center text-green-700"
+                class="mb-2 animate-pulse text-center text-lg font-semibold text-green-700"
               >
                 Coffee
               </h4>
-              <p class="text-gray-600 text-center">
+              <p class="text-center text-gray-600">
                 I love coffee (mainly espresso). Ever since I got my Nespresso
                 machine for my birthday I cannot go a day without making a
                 latte.
@@ -63,11 +178,11 @@
             </div>
             <div class="bg-white p-4 shadow-md">
               <h4
-                class="text-lg font-semibold mb-2 animate-pulse text-center text-green-700"
+                class="mb-2 animate-pulse text-center text-lg font-semibold text-green-700"
               >
                 Books
               </h4>
-              <p class="text-gray-600 text-center">
+              <p class="text-center text-gray-600">
                 I enjoy reading books in my free time. Or really I should say
                 listening to them since that's mostly how I read books. I'm big
                 on thrillers,mysteries, "Who-done-its" and of course self help
@@ -79,10 +194,10 @@
       </section>
 
       <form
-        class="max-w-md mx-auto p-6 bg-yellow-100 shadow-md rounded-md mt-4"
+        class="mx-auto mt-4 max-w-md rounded-md bg-yellow-100 p-6 shadow-md"
       >
         <div class="mb-4">
-          <label for="name" class="block text-gray-700 font-semibold mb-2"
+          <label for="name" class="mb-2 block font-semibold text-gray-700"
             >Name</label
           >
           <input
@@ -90,11 +205,11 @@
             id="name"
             name="name"
             placeholder="Enter your name"
-            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-green-500 focus:outline-none"
           />
         </div>
         <div class="mb-4">
-          <label for="Call Me" class="block text-gray-700 font-semibold mb-2"
+          <label for="Call Me" class="mb-2 block font-semibold text-gray-700"
             >Call Me</label
           >
           <input
@@ -102,11 +217,11 @@
             id="call"
             name="call"
             placeholder="Enter your phone number"
-            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-green-500 focus:outline-none"
           />
         </div>
         <div class="mb-4">
-          <label for="email" class="block text-gray-700 font-semibold mb-2"
+          <label for="email" class="mb-2 block font-semibold text-gray-700"
             >Email</label
           >
           <input
@@ -114,11 +229,11 @@
             id="email"
             name="email"
             placeholder="Enter your email"
-            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-green-500 focus:outline-none"
           />
         </div>
         <div class="mb-6">
-          <label for="message" class="block text-gray-700 font-semibold mb-2"
+          <label for="message" class="mb-2 block font-semibold text-gray-700"
             >Message</label
           >
           <textarea
@@ -126,13 +241,13 @@
             name="message"
             rows="4"
             placeholder="Enter your message"
-            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-green-500 focus:outline-none"
           ></textarea>
         </div>
         <div class="flex justify-end">
           <button
             type="submit"
-            class="bg-green-500 hover:bg-green-600 transition-colors duration-300 ease-in-out text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline"
+            class="focus:shadow-outline rounded-md bg-green-500 px-4 py-2 font-semibold text-white transition-colors duration-300 ease-in-out hover:bg-green-600 focus:outline-none"
           >
             Submit
           </button>
